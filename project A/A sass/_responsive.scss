@@ -1,0 +1,32 @@
+@include tablet{
+    .body{
+        padding: 10px;
+    }
+    .container{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        /* grid-template-rows: repeat(6,1fr); */
+
+        .box1{
+          grid-column: 1/3;
+          grid-row: 1/3;
+        
+        }
+        .box2{
+          grid-row: 7/10;
+              form{
+               width: 100%;
+               padding: 40px;
+              
+          input[type=button]{
+            padding: 2px;
+            margin-top: 1px;
+          }
+          
+          h1{
+            font-size: $fonth1R;
+          }
+        }
+        }
+    }
+}

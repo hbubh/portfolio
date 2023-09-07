@@ -1,0 +1,39 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$basesize:60%;
+$divimgwidht:15%;
+$imgwidth:10%;
+$fonth1:2.6rem;
+$fonth1R:1rem;
+$fontp:1rem;
+$fontpR:0.4rem;
+$formr:0.2rem;
+
+
+// mixin-media 
+@mixin desktop{
+@media (max-width:992px){
+@content;
+}
+}
+
+
+@mixin tablet{
+@media (max-width:950px){
+@content;
+}
+}
+
+
+@mixin mobile{
+@media (max-width:576px){
+@content;
+}
+}
