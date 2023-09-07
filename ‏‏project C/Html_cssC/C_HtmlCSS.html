@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html & Css C</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to bottom, #281EFF, #2DFF8C);
+            position: absolute;
+            color: white;
+            text-align: center;
+
+        }
+
+        .text {
+            width: 70%;
+            margin: 10% auto;
+
+        }
+
+        h1 {
+            font-family: 'Satisfy', cursive;
+            font-size: 800%;
+            font-weight: 100;
+            text-shadow: 0 0 36px #00000087;
+        }
+
+        h2 {
+            padding: 10px;
+            font-weight: 100;
+        }
+
+
+
+        .forme {
+            width: 50%;
+            margin: -5% auto;
+            text-align: right;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .form1 {
+            flex-grow: 1;
+            order: 3;
+        }
+
+        .form2 {
+            flex-grow: 1;
+            order: 2;
+        }
+
+
+        label {
+            display: inline-block;
+            text-align: right;
+            width: 100%;
+        }
+
+        input[type=text] {
+            width: 70%;
+            padding: 5px;
+            display: inline;
+            background-color: rgb(255, 255, 255, 0.2);
+            border: 2px solid #FFF;
+        }
+
+        input[type=button] {
+            width: 28%;
+            padding: 5px;
+            border: 2px solid #FFF;
+        }
+
+        .but {
+            padding: 7px;
+        }
+
+        .butRes {
+            display: none;
+
+        }
+
+
+
+        @media (max-width:759px) {
+
+            .text {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 400%;
+            }
+
+            h2,
+            p {
+                font-size: 90%;
+            }
+
+            p {
+                width: 50%;
+                margin-left: 25%;
+                line-height: 1.5;
+            }
+
+            label {
+                width: 100%;
+            }
+
+            input[type=text] {
+                width: 100%;
+            }
+
+            .forme {
+                display: block;
+                width: 80%;
+            }
+
+            .butRes {
+                display: block;
+                width: 100%;
+
+            }
+
+            .but {
+                display: none;
+            }
+
+            input[type=text] {
+                margin-bottom: 5%;
+            }
+
+            input[type=button] {
+                width: 100%;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Here & Now</h1>
+            <h2>רצינו להזמין אתכם להנות משלל מתנות</h2>
+            <p>ברוכים הבאים לפרוייקט הרביעי בעבודה שלי</p>
+        </div>
+        <div class="forme">
+            <form action="" class="form1">
+                <label for="name">שם מלא</label><br>
+                <input type="text">
+            </form>
+            <form action="" class="form2">
+                <label for="mail">אימייל</label><br>
+                <button class="but">שליחה</button>
+                <input type="text">
+                <button class="butRes">שליחה</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

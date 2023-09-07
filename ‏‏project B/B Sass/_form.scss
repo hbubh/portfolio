@@ -1,0 +1,70 @@
+.container{
+ width: 100vw;
+ height: 100vh;
+display: flex;
+padding: 50px;
+
+    .form{
+        flex-grow: 7;
+        order: 2;
+        padding: 10px;
+        
+        form{
+            margin-left: 10vw;
+            width: 20vw;
+            text-align: right;
+            
+            h1{
+                font-size: 2rem;
+                font-family: 'Rubik', sans-serif;
+                font-weight: 700;
+                color: #020253;
+                margin-top: 8vw;
+                margin-bottom: 15px;;
+                
+            }
+
+            p{
+                font-size: 1rem;
+                font-family: 'Rubik', sans-serif;
+                font-weight: 400;
+                margin-bottom: 25px;
+                color: #020253;
+                
+            }
+
+            input, label{
+                font-size: 1rem;
+                font-family: 'Rubik', sans-serif;
+                font-weight: 400;
+                margin-bottom: 15px;
+
+            }
+
+            input{
+                width: 100%;
+                padding: 5px;
+                background-color: #E5EEFF;
+                bottom: none;
+                border-bottom: 4px solid #020253 ;
+            }
+
+            input.send{
+                background-color: #020253;
+                color: white;
+                width: 40%;
+                border-radius: 4px;
+            }
+
+        }
+        
+     
+    }
+
+    img{
+        display: block;
+      flex-grow: 6;
+      order: 1;
+    }
+
+    }

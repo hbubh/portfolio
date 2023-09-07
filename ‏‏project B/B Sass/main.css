@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 50px;
+}
+.container .form {
+  flex-grow: 7;
+  order: 2;
+  padding: 10px;
+}
+.container .form form {
+  margin-left: 10vw;
+  width: 20vw;
+  text-align: right;
+}
+.container .form form h1 {
+  font-size: 2rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  color: #020253;
+  margin-top: 8vw;
+  margin-bottom: 15px;
+}
+.container .form form p {
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #020253;
+}
+.container .form form input, .container .form form label {
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.container .form form input {
+  width: 100%;
+  padding: 5px;
+  background-color: #E5EEFF;
+  bottom: none;
+  border-bottom: 4px solid #020253;
+}
+.container .form form input.send {
+  background-color: #020253;
+  color: white;
+  width: 40%;
+  border-radius: 4px;
+}
+.container img {
+  display: block;
+  flex-grow: 6;
+  order: 1;
+}
+
+@media (max-width: 750px) {
+  .container {
+    display: block;
+    padding: 0;
+  }
+  .container .form {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .container .form form {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .container .form form h1 {
+    margin-top: 0;
+    text-align: center;
+  }
+  .container .form form p {
+    text-align: center;
+  }
+  .container .form form input, .container .form form label {
+    font-size: 0.6rem;
+    width: 100%;
+  }
+  .container .form form input.send {
+    width: 100%;
+  }
+  .container img {
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+  }
+}/*# sourceMappingURL=main.css.map */

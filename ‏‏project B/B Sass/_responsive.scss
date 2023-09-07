@@ -1,0 +1,38 @@
+@media (max-width:750px){
+    .container{
+        display: block;
+        padding: 0;
+
+        .form{
+            width: 90%;
+            margin-left: 5%;
+
+form{
+    width: 80%;
+    margin-left: 10%;
+
+    h1{
+        margin-top: 0;
+        text-align: center;
+    }
+
+    p{
+text-align: center;
+    }
+    input, label{
+        font-size: 0.6rem;
+        width: 100%;
+    }
+    input.send{
+        width: 100%;
+    }
+}
+    
+ }   
+img{
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+}
+}
+}

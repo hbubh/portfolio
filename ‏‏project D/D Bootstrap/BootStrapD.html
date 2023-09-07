@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap D</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .con {
+            width: 100vw;
+            height: 100vh;
+
+        }
+
+        .textarea {
+            width: 100vw;
+            margin: 0 auto;
+
+        }
+
+        .con h1 {
+            width: 100vw;
+            position: absolute;
+            margin-top: 10%;
+            color: #D3E10E;
+            text-align: center;
+            font-size: 3.3rem;
+            font-weight: bold;
+        }
+
+        .con p {
+            width: 100vw;
+            position: absolute;
+            margin-top: 18%;
+            text-align: center;
+            color: rgb(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+
+        .boot {
+            width: 80vw;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        input[type=text] {
+            width: 25vw;
+            border-bottom: 4px solid #D3E10E;
+            text-align: right;
+        }
+
+        .boot button {
+            width: 10vw;
+            background-color: #D3E10E;
+        }
+
+        #butR {
+            display: none;
+        }
+
+        @media (max-width:750px) {
+            .con h1 {
+                width: 100vw;
+                margin: 10% auto;
+                font-size: 1.4rem;
+            }
+
+            .con p {
+                width: 100vw;
+                margin-top: 19%;
+                font-size: 0.5rem;
+            }
+
+            input[type=text] {
+                width: 30vw;
+            }
+
+            #but {
+                display: none;
+            }
+
+            #butR {
+                display: block;
+                width: 80vw;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="textarea">
+            <h1>תן לנו להוביל אותך קדימה</h1>
+            <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+        </div>
+
+        <img src="images/bgc.jpg" class="img-fluid" alt="..."><br><br><br>
+        <div class="boot">
+            <div class="row g-3">
+                <button type="button" class="btn btn-success" id="but">שליחה</button>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="אימייל" aria-label="Last name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="שם מלא" aria-label="First name">
+                </div>
+                <button type="button" class="btn btn-success" id="butR">שליחה</button>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+ /* הגדרת איפוס */
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* עיצוב סרגל ראשי */
+    .bar {
+        width: 100vw;
+        height: 50px;
+        background-color: black;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+        box-shadow: 0px 1px 7px;
+        position: fixed;
+        z-index: 6;
+    }
+
+    /* עיצוב העמודה שבתוך הסרגל והינה העמודה היחידה בסרגל זה */
+    .bar ul {
+        width: 100vw;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* עיצוב כל האלמנטים של העמודה , בהמשך אלמנטים עם קלאס ייחודי יקבלו עיצוב אישי */
+    .bar ul li {
+        flex-grow: 1;
+        color: white;
+        padding: 15px;
+    }
+
+    /* עיצוב הקישורים שבתוך כל אלמנט  */
+    .bar ul li a {
+         text-decoration: none;
+        text-decoration-skip: none;
+       transition: all 0.5s; 
+       color: white; 
+       
+    }
+
+    /* עיצוב התבנית שבה יושבת התמונה שלי בסרגל הניווט הראשי */
+.bar ul .mylogo{
+    padding: 0px;
+    text-align: right;
+   
+}
+
+/* עיצוב תמונה של מגיש הפרוייקט ,תמונה זו צמודה יחסית לשם המגיש */
+    li img {
+        width: 50px;
+        height: 50px;
+        border-left: 2px solid rgb(0, 0, 0, 0.4);
+        border-right: 2px solid rgb(0, 0, 0, 0.4);
+        border-radius: 25px;
+        box-shadow: 1px 0px 5px;
+    }
+
+    /* עיצוב התבנית שבתוכה השם של המגיש */
+    .me {
+        flex-grow: 3;
+        width: 20vw;
+        text-align: justify;
+        font-family: 'Teko', sans-serif;
+        text-align: left;
+        font-size: 1.3rem;   
+    }
+
+    /* עיצוב התוכן שבתוך התבנית שתוארה מעלה */
+    .me a {
+        color: rgb(1, 97, 97);
+        position: absolute;   
+    }
+
+    /* עיצוב שאר התוכן שקיים בשאר התבניות של סרגל הניווט */
+    .kishur {
+        margin-left: 5px;
+        border-radius: 15px;
+        font-family: 'Courgette', cursive;
+        transition: all 0.4s;
+    }
+
+    /* קלאס שראשי תיבות קישור-ימין והוא נוצר על מנת לספק מרווח ימינה ממנו */
+    .kr {
+        margin-right: 5px;
+    }
+
+    /* קלאס שראשי תיבות קישור-שמאל והוא נוצר על מנת לספק מרווח שמאלה ממנו */
+    .kl{
+        margin-left: 20vw;
+    }
+
+    /* הגדרות עיצוב בעת מעבר סמן העכבר על הקישורים של סרגל הניווט */
+    .kishur:hover>a {
+        color: teal;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+
+      @media (max-width:730px){
+.bar{
+    width: 100vw; 
+}
+.bar ul {
+   justify-content: space-evenly; 
+}
+.kl{
+   margin-left: 10vw;
+}
+.me{
+    display: none;
+}
+.bar ul li a {
+      font-size: 12px;
+    }
+   .kishur:hover>a {
+        font-size: 1rem;
+    }
+  
+    .mylogo{
+    padding: 0px;
+    text-align: none;
+   
+    }
+}
