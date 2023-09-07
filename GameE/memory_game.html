@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/memory_game.css" />
+</head>
+
+<body>
+    <div id="mainContainer">
+        <h1>Memory Game</h1>
+        <div id="btns">
+            <label for="">
+                <details>
+                    <summary>
+                        Start
+                    </summary>
+                    choose how many cards do you want to play with
+                </details>
+            </label>
+            <button class="btn btn1" id="btn12">12</button>
+            <button class="btn btn2" id="btn18">18</button>
+            <button class="btn btn3" id="btn24">24</button>
+        </div>
+        <div class="alert True" id="true">Correct</div>
+        <div class="alert False" id="false">Incorrect</div>
+        <div id="cardsContainer"></div>
+        <div id="newGameDiv">
+            <button id="newGameBtn">New Game</button>
+        </div>
+    </div>
+    <script src="./js/memoryGame.js"></script>
+</body>
+
+</html>

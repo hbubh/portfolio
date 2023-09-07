@@ -1,0 +1,209 @@
+.warplate {
+  width: 80%;
+  height: 90vh;
+  margin-left: 10%;
+  border: 100px solid rgb(48, 34, 14);
+  border-right: 100px solid rgb(60, 46, 27);
+  border-left: 100px solid rgb(60, 46, 27);
+  border-radius: 200px 200px 200px 200px;
+  background-image: url("../imges/פוקר-רקע-וקטור-איפסאס_csp5718368.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  box-shadow: 6px 6px 6px 6px;
+}
+.opCards {
+  width: 60%;
+  height: 20vh;
+  padding: 20px;
+  position: absolute;
+  margin-left: 12%;
+  margin-top: -5%;
+  display: flex;
+}
+
+.warZone {
+  width: 60%;
+  height: 35vh;
+  padding: 20px;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 27.5vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.myWar,
+.opWar {
+  width: 20%;
+  height: 80%;
+  padding: 30px;
+  border: 4px solid #000;
+  border-radius: 50px 50px 0 0;
+}
+.myWar h1,
+.opWar h1 {
+  text-align: center;
+  color: wheat;
+}
+.myWar .card,
+.opWar .card {
+  margin-left: 5%;
+  position: none;
+  color: #000;
+  background-color: red;
+}
+
+.whoWon {
+  font-size: 2rem;
+  padding: 30px;
+  margin-top: 10%;
+}
+
+.myCards {
+  width: 60%;
+  height: 20vh;
+  padding: 20px;
+  position: absolute;
+  margin-left: 12%;
+  margin-top: 57vh;
+  display: flex;
+}
+
+.myReCards {
+  width: 20%;
+  height: 20vh;
+  padding: 20px;
+  position: absolute;
+  margin-top: 48vh;
+  margin-left: -10%;
+}
+.opReCards {
+  width: 20%;
+  height: 20vh;
+  padding: 20px;
+  margin-left: -10%;
+  position: absolute;
+}
+.opReCards .card,
+.myReCards .card {
+  background-color: rgb(0, 0, 175);
+  color: wheat;
+}
+
+.card {
+  border: 3px solid #000;
+  margin-left: 40%;
+  border-radius: 15px;
+  position: absolute;
+  width: 88px;
+  color: rgb(0, 0, 0, 0);
+  height: 135px;
+  padding: 8px;
+  font-size: 25pt;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(184, 89, 11, 0.5);
+  transition: all 0.5s;
+}
+
+.popUp {
+  width: 50%;
+  font-size: 50pt;
+  height: 50%;
+  margin-top: -40%;
+  margin-left: 25%;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  border: 1px solid #000;
+  background-color: rgb(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  display: none;
+}
+
+#rematch {
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid #000;
+}
+
+#start {
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.5s;
+  position: absolute;
+}
+#start:hover {
+  background-color: red;
+}
+
+@media (max-width: 1200px) {
+  .warplate {
+    width: 100%;
+  }
+  .warZone {
+    width: 80%;
+    margin-left: 0;
+  }
+  .myWar .card,
+  .opWar .card {
+    margin-left: 1%;
+  }
+  .popUp {
+    margin-top: -120%;
+  }
+}
+
+@media (max-width: 950px) {
+  .warplate {
+    border: 30px solid rgb(60, 46, 27);
+  }
+  .myWar .card,
+  .opWar .card {
+    margin-left: -2%;
+  }
+  .myReCards {
+    margin-top: 70vh;
+  }
+  .myCards {
+    margin-top: 70vh;
+  }
+}
+
+@media (max-width: 560px) {
+  .popUp {
+    margin-top: -160%;
+    font-size: 30pt;
+  }
+  .myWar .card,
+  .opWar .card {
+    margin-left: -4%;
+  }
+}
+@media (max-width: 460px) {
+  .popUp {
+    margin-top: -180%;
+  }
+  .myWar .card,
+  .opWar .card {
+    margin-left: -6%;
+  }
+  .myWar h1,
+  .opWar h1 {
+    font-size: 20pt;
+  }
+  .warZone {
+    margin-left: -6%;
+  }
+  .opWar {
+    margin-left: -10%;
+  }
+}
+@media (max-width: 360px) {
+  .popUp {
+    margin-top: -200%;
+  }
+}

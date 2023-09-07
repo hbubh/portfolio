@@ -1,0 +1,86 @@
+.container {
+  width: 50%;
+  height: 45vh;
+  padding: 70px;
+  margin-top: 200px;
+  margin-left: 25%;
+  background-color: rgb(239, 239, 153, 0.7);
+  color: rgb(132, 86, 1);
+  border: 3px solid #f5f2f2;
+  font-size: 15pt;
+  border-radius: 30px;
+  position: absolute;
+}
+
+.container h1 {
+  font-size: 40pt;
+}
+
+#img {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imges/numbers_AdobeStock_90801181.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-primary {
+  background-color: orange;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: rgb(132, 86, 1);
+}
+
+.popup {
+  font-size: 30pt;
+  font-weight: bold;
+}
+p {
+  margin-left: 5%;
+  font-weight: bold;
+}
+a {
+  color: black;
+}
+
+@media (max-width: 867px) {
+  .container {
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    height: 30vh;
+  }
+
+  .forme1 {
+    text-align: center;
+  }
+
+  .container h1 {
+    font-size: 30pt;
+  }
+  .popup {
+    font-size: 20pt;
+  }
+}
+
+@media (max-width: 476px) {
+  .container {
+    height: 50%;
+  }
+
+  #quest {
+    font-weight: bold;
+    font-size: 25pt;
+    color: green;
+  }
+}
+
+@media (max-width: 391px) {
+  #btn {
+    margin-bottom: 10px;
+  }
+  .popup {
+    font-size: 15pt;
+  }
+}

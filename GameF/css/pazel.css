@@ -1,0 +1,89 @@
+.con {
+  width: 40%;
+  height: 80vh;
+  margin: auto auto;
+  border: 5px solid #000;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-bottom: 5%;
+}
+
+.divImg {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+}
+
+.con .divImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.smallCon {
+  text-align: center;
+  box-shadow: 5px 5px 10px;
+  width: 20%;
+  height: 40vh;
+  position: absolute;
+  margin-top: -30%;
+  margin-left: 3%;
+  padding: 20px;
+  background-color: rgba(44, 44, 127, 0.589);
+  border: 2px solid #000;
+  border-radius: 20px;
+}
+
+.smallCon input {
+  width: 70%;
+
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+#start {
+  background-color: green;
+}
+.smallCon label {
+  width: 90%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #fff;
+  padding: 3px;
+  font-weight: bold;
+}
+.smallCon button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+  background-color: lightblue;
+  border-radius: 5px;
+}
+#change {
+  background-color: darkgoldenrod;
+}
+#check {
+  font-weight: bold;
+  background-color: yellowgreen;
+}
+#newGame {
+  display: none;
+}
+p {
+  font-size: 1.5rem;
+  padding: 5px;
+  border-radius: 20px;
+  opacity: 0.6;
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+}
+@media (max-width: 1000px) {
+  .con {
+    width: 80%;
+    height: auto;
+  }
+
+  .smallCon {
+    margin-top: 0;
+    position: fixed;
+  }
+}
