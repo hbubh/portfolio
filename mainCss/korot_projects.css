@@ -1,0 +1,185 @@
+div.korot {
+  width: 24%;
+  margin: auto;
+  margin-left: 38%;
+  background-color: rgba(255, 228, 196, 0.3);
+  border-right: 2px solid rgb(0, 0, 0, 0.4);
+  border-left: 2px solid rgb(0, 0, 0, 0.4);
+  border-radius: 0px 0px 20px 20px;
+}
+div.korot img {
+  margin-top: 30%;
+  margin-left: 33%;
+  width: 40%;
+  height: 40%;
+  border: 3px solid #000;
+  border-radius: 70px;
+  margin-bottom: 50px;
+}
+
+.korot #pkorot {
+  display: block;
+  text-align: center;
+  line-height: 2;
+  font-size: 17px;
+  padding: 30px;
+  font-family: "Nothing You Could Do", cursive;
+}
+.pdf {
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(172, 113, 42, 0.3);
+  border-radius: 0px 0px 20px 20px;
+  color: black;
+}
+.pdf a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+.conproject {
+  width: 100%;
+  margin-top: 100px;
+  display: grid;
+  background-color: #ccc;
+  border-top: 10px solid rgba(204, 204, 204, 0.2);
+  border-radius: 200px 0px 0px 0px;
+  box-shadow: 0px 0px 30px 10px;
+  padding: 50px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project {
+  width: 60%;
+  height: 60vh;
+  background-color: rgb(216, 208, 199);
+  border: 2px solid #ccc;
+  margin: 20px auto;
+  margin-bottom: 20px;
+  border-radius: 20px 20px 5px 5px;
+  overflow: hidden;
+  box-shadow: 15px 15px 40px;
+}
+.project #myproject {
+  width: 100%;
+  height: 30%;
+  border-radius: 20px 20px 5px 5px;
+  transition: all 0.5s;
+}
+
+.project #myproject:hover {
+  transform: scaleX(1.5);
+}
+
+.project h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgb(30, 22, 58);
+  background-color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: -5px;
+  padding: 15px;
+}
+.project p {
+  font-size: 0.8rem;
+  color: darkgreen;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+div.conPojimg {
+  width: 60%;
+  margin-left: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+div.conPojimg img {
+  width: 13%;
+  border-radius: 5px;
+  height: 100%;
+}
+.buttonPoj {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10%;
+  border: 1px solid #000;
+  background-color: rgb(91, 65, 34);
+  padding: 7px;
+  text-align: center;
+  border-radius: 20px 5px 20px 5px;
+}
+.buttonPoj a {
+  font-size: 1rem;
+  color: beige;
+
+  text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+  .conproject {
+    width: 100vw;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 100px 0px 0px 0px;
+    padding: 20px;
+    gap: 20px;
+    padding-bottom: 60px;
+  }
+  .project {
+    width: 80%;
+    height: 100%;
+  }
+  .project h2 {
+    font-size: 1rem;
+  }
+  .project p {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .conproject {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 730px) {
+  div.korot img {
+    margin-bottom: 20px;
+    width: 50%;
+    height: 55%;
+    margin-left: 25%;
+    text-align: center;
+    margin-top: 30%;
+  }
+  .korot #pkorot {
+    font-size: 10px;
+  }
+
+  div.korot {
+    width: 40%;
+    margin-left: 30%;
+    max-height: 10%;
+  }
+  .korot p {
+    max-height: 15%;
+  }
+  #pkorot {
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  .pdf {
+    font-size: 12px;
+  }
+  .buttonPoj {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    padding: 1px;
+  }
+
+  .buttonPoj a {
+    font-size: 0.5rem;
+  }
+}

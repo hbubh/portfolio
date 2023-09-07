@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bar {
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(117, 208, 238);
+  border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 7px;
+  position: fixed;
+  z-index: 6;
+}
+
+.bar ul {
+  width: 100vw;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bar ul li {
+  flex-grow: 1;
+  color: white;
+  padding: 15px;
+}
+
+.bar ul li a {
+  text-decoration: none;
+  text-decoration-skip: none;
+  transition: all 0.5s;
+  color: orange;
+}
+
+.bar ul .mylogo {
+  padding: 0px;
+  text-align: right;
+}
+
+/* עיצוב תמונה של מגיש הפרוייקט ,תמונה זו צמודה יחסית לשם המגיש */
+li img {
+  width: 50px;
+  height: 50px;
+  border-left: 2px solid rgb(0, 0, 0, 0.4);
+  border-right: 2px solid rgb(0, 0, 0, 0.4);
+  border-radius: 25px;
+  box-shadow: 1px 0px 5px;
+}
+
+.me {
+  flex-grow: 3;
+  width: 20vw;
+  text-align: justify;
+  font-family: "Teko", sans-serif;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.me a {
+  color: rgb(1, 97, 97);
+  position: absolute;
+}
+
+.kishur {
+  margin-left: 5px;
+  border-radius: 15px;
+  font-family: "Courgette", cursive;
+  transition: all 0.4s;
+}
+
+.kr {
+  margin-right: 5px;
+}
+
+/* קלאס שראשי תיבות קישור-שמאל והוא נוצר על מנת לספק מרווח שמאלה ממנו */
+.kl {
+  margin-left: 20vw;
+}
+
+/* הגדרות עיצוב בעת מעבר סמן העכבר על הקישורים של סרגל הניווט */
+.kishur:hover > a {
+  color: teal;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 730px) {
+  .bar {
+    width: 100vw;
+  }
+  .bar ul {
+    justify-content: space-evenly;
+  }
+  .kl {
+    margin-left: 10vw;
+  }
+  .me {
+    display: none;
+  }
+  .bar ul li a {
+    font-size: 12px;
+  }
+  .kishur:hover > a {
+    font-size: 1rem;
+  }
+
+  .mylogo {
+    padding: 0px;
+    text-align: none;
+  }
+}
+@media (max-width: 430px) {
+  .kishurDn {
+    display: none;
+  }
+  .kl {
+    margin-left: 0;
+  }
+}

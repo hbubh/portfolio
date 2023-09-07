@@ -1,0 +1,174 @@
+.titleGame {
+  width: 100vw;
+  background-color: rgb(65, 4, 65);
+  text-align: center;
+  padding: 30px;
+  color: #c6acac;
+}
+.conGames {
+  width: 100vw;
+  height: auto;
+  background-color: rgb(65, 4, 65);
+  padding: 60px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 60px;
+}
+.game {
+  width: 90%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+  display: flex;
+  text-align: center;
+}
+.game1,
+.game4,
+.game7 {
+  margin-left: 10%;
+}
+.game2,
+.game5,
+.game8 {
+  margin-left: 5%;
+}
+.gameimg {
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.1s;
+}
+
+.gameimg:hover {
+  border-radius: 25px 0px 0px 25px;
+}
+.gameimg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px 0px 0px 25px;
+  transition: all 1s;
+}
+.gameimg img:hover {
+  width: 130%;
+  height: 130%;
+  margin-top: -15%;
+  margin-left: -15%;
+}
+
+.dnGame {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  border-radius: 25px;
+  display: none;
+}
+.dn1 {
+  background-image: url(../GameA/imges/dn.jpg);
+}
+.dn2 {
+  color: white;
+  background-image: url(../GameB/imges/Xo.jpg);
+}
+.dn3 {
+  background-image: url(../GameC/imges/elementor.jpeg);
+}
+.dn4 {
+  background-image: url(../GameD/imges/dn.jpg);
+}
+.dn5 {
+  background-image: url(../GameE/imges/small.jpeg);
+}
+.dn6 {
+  background-image: url(../GameF/imges/small.jpg);
+}
+.dn7 {
+  background-image: url(../GameG/imges/small.jpg);
+}
+.dn8 {
+  background-image: url(../GameH/imges/ss2.jpg);
+}
+.game9 {
+  opacity: 0.2;
+  transition: all 1s;
+  color: white;
+}
+.game9 .inGame {
+  box-shadow: 0px 0px 0px;
+}
+.game9:hover {
+  opacity: 0.5;
+  color: black;
+}
+.dnGame p {
+  font-weight: bold;
+  padding: 1px;
+  width: 100%;
+}
+.dnGame button {
+  padding: 1px;
+  border-radius: 10px;
+  background-color: rgb(38, 86, 243);
+  padding: 5px;
+}
+.dnGame button a {
+  color: bisque;
+  text-decoration: none;
+}
+
+.inGame {
+  padding: 20px;
+  box-shadow: -3px 0px 10px;
+}
+
+.inGame img {
+  width: 30%;
+  height: 30%;
+}
+.inGame p {
+  font-weight: bold;
+}
+
+.inGame button {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(38, 86, 243);
+  width: 100%;
+}
+.inGame button a {
+  color: bisque;
+  text-decoration: none;
+}
+@media (max-width: 1025px) {
+  .conGames {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .game {
+    margin: 0;
+  }
+  .game9 {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .inGame {
+    display: none;
+  }
+  .gameimg {
+    display: none;
+  }
+  .dnGame {
+    display: block;
+  }
+}
+
+@media (max-width: 380px) {
+  .conGames {
+    gap: 20px;
+  }
+}

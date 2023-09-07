@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+.con {
+  width: 80%;
+  margin-left: 15%;
+  height: 90vh;
+  padding: 30px;
+  border: 1px solid #000;
+  background-color: rgb(35, 43, 8);
+  transition: all 1s;
+}
+
+.mounth {
+  width: 100%;
+  height: 30%;
+  border: 4px solid #f6f4f4;
+  border-bottom: 1px solid black;
+  padding: 30px;
+  font-size: 50pt;
+  background-color: lightskyblue;
+  background-image: url(../imges/cloud.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mounth button {
+  padding: 10px;
+  font-size: 15pt;
+  margin-left: 5%;
+}
+.mounth span {
+  margin-left: 2%;
+  font-size: 30pt;
+  background-color: #fff;
+  border: 3px solid #000;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0px 150px 0px 150px;
+  text-shadow: 5px 5px 10px;
+}
+
+#show {
+  width: 13%;
+  padding: 10px;
+  height: auto;
+  background-color: rgb(54, 173, 247);
+  border: 3px solid #000;
+  text-align: justify;
+  font-weight: bold;
+}
+.show {
+  width: 13%;
+  padding: 10px;
+  height: auto;
+  background-color: lightskyblue;
+  border: 3px solid #000;
+  position: absolute;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.week {
+  width: 100%;
+  height: 17.5%;
+  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  padding: 10px;
+  font-size: 15pt;
+  font-weight: bold;
+  overflow: hidden;
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.but {
+  padding: 5px;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+}
+
+.popup {
+  position: absolute;
+  width: 50%;
+  height: 50vh;
+  margin-top: 25vh;
+  margin-left: 25%;
+  border: 3px solid #000;
+  background-image: url(../imges/tree.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  z-index: 5;
+  display: none;
+}
+
+.popup p {
+  display: inline;
+  font-weight: bold;
+  color: rgb(36, 37, 16);
+  background-color: #ffffff63;
+  padding: 2px;
+}
+
+#nums {
+  width: 5%;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+#input {
+  width: 70%;
+  height: 30%;
+  border-radius: 10px;
+}
+
+#save {
+  padding: 5px;
+  background-color: rgb(4, 4, 173);
+  color: aliceblue;
+  border-radius: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 750px) {
+  .con {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  .mounth {
+    font-size: 30pt;
+  }
+  .mounth bottom {
+    font-size: 10pt;
+  }
+  .mounth span {
+    font-size: 20pt;
+  }
+  .show {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-top: 90vh;
+    border: 5px solid #000;
+  }
+  #show {
+    position: absolute;
+    width: 45%;
+    margin-top: 90vh;
+    margin-left: 52.5%;
+    border: 5px solid #000;
+  }
+}
+
+@media (max-width: 470px) {
+  .mounth span {
+    font-size: 10pt;
+    display: inline-block;
+    padding: 5px;
+    width: 35%;
+  }
+}
