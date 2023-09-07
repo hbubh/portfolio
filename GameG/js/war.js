@@ -121,7 +121,7 @@ if (
           checkStatus();
         }, 1500);
       } else if (+myCheck.id == +opCheck.id) {
-        whoWon.innerHTML = "Drow";
+        whoWon.innerHTML = "Draw";
         whoWon.style.color = "darkblue";
         setTimeout(() => {
           myRe.appendChild(myCheck);
@@ -174,7 +174,7 @@ if (
         }
         if (+myArr.length == +opArr.length) {
           plate.style.opacity = "0.3";
-          popUp.innerHTML = `Game Drow! <br> <br> Socre: ${num1} Vs ${num2}<br>`;
+          popUp.innerHTML = `Game Draw! <br> <br> Socre: ${num1} Vs ${num2}<br>`;
           popUp.setAttribute("style", "display:block; color:rgb(164, 164, 1)");
           popUp.appendChild(rematch);
         }
