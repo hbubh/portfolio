@@ -138,6 +138,7 @@
   .con {
     width: 95%;
     margin-left: 2.5%;
+    padding:10px;
   }
   .mounth {
     font-size: 30pt;
