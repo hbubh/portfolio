@@ -10,7 +10,27 @@
   font-weight: bold;
   margin-left: 10%;
 }
-
+#poUp {
+  width: 30%;
+  height: 50vh;
+  margin-left: 35%;
+  margin-top: -40%;
+  position: absolute;
+  border: 3px solid #000;
+  background-color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+  line-height: 2;
+  font-size: 20pt;
+  text-shadow: 8px 9px 17px;
+  transition: all 1s;
+  opacity: 0;
+}
+#btnpop {
+  border: none;
+  font-weight: bold;
+}
 .contact h1 {
   font-size: 2rem;
   margin-top: 7%;
@@ -93,5 +113,32 @@ input[type="button"] {
   }
   .zhuyut {
     font-size: 0.7rem;
+  }
+}
+@media (max-width: 960px) {
+  #poUp {
+    margin-top: -50%;
+  }
+}
+@media (max-width: 790px) {
+  #poUp {
+    margin-top: -80%;
+  }
+}
+@media (max-width: 650px) {
+  #poUp {
+    width: 70%;
+    margin-left: 15%;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 500px) {
+  #poUp {
+    margin-top: -100%;
+  }
+}
+@media (max-width: 390px) {
+  #poUp {
+    margin-top: -130%;
   }
 }
